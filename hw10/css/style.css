@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Staatliches&family=Tourney:wght@600&display=swap');
+
+body {
+  font-family: 'Farro', sans-serif;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Staatliches', cursive;
+  font-family: 'Tourney', cursive;
+}
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  height: 2375px;
+  margin: 0 auto;
+  background-color: white;
+}
+.conteiner {
+  max-width: 1200px;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 13px;
+}
+.conteiner a {
+  width: 50px;
+  font-family: 'Tourney';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+.menu {
+  width: 710px;
+}
+.menu ul {
+  display: inline-flex;
+}
+.menu li {
+  height: 28px;
+  padding-right: 10px;
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.chapter {
+  width: 1200px;
+  margin: 0 auto;
+}
+.chapter__title__wrap {
+  width: 765px;
+  height: 48px;
+  display: inline-flex;
+}
+.chapter__title {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.chapter__subtitle sup {
+  font-family: 'Farro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.chapter__text {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 45px;
+  color: #000000;
+  padding-top: 40px;
+}
+.chapter__text_italic {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+  color: #000000;
+}
+.chapter1 {
+  height: 221px;
+  padding-top: 85px;
+}
+.chapter2 {
+  height: 318px;
+  padding-top: 70px;
+}
+.chapter3 {
+  height: 993px;
+  padding-top: 70px;
+}
+.chapter4 {
+  height: 393px;
+  padding-top: 70px;
+}
+.chapter__text span {
+  background-color: rgb(227, 226, 226);
+}
