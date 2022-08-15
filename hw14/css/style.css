@@ -1,0 +1,323 @@
+*{
+  padding: 0;margin: 0;
+  border: 0;
+  user-select: none;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  touch-action: pan-x pan-y;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo a h1 {
+  font-family: 'Train One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #282528;
+  margin-top: 8px;  
+}
+
+.header__logo .logo {
+  display: flex;  
+}  
+
+.header__main-menu .main-menu__items {
+  display: flex;
+  /*margin-top: 28px;*/  
+}
+
+.header__main-menu .main-menu__item a {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  margin: 0 15px;
+}
+
+.header__main-menu .main-menu__item_active a {
+  color: #18B5DC;
+}
+
+.header__main-menu .main-menu__item a:hover {
+  color: #18B5DC;
+}
+
+.header__callback a {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  /*padding: 10px 20px;
+  gap: 10px;*/
+  width: 130px;
+  height: 42px;
+  border: 1px solid #3C3C3C;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #3C3C3C;
+  /*margin-top: 19px;*/  
+}
+
+.header__callback a:hover {
+  background-color: #18B5DC;
+  color: #fff;
+  border: 1px solid #18B5DC;
+}
+
+/*.header::after{
+  content: "";
+  width: 1440px;
+  border: 1px solid #BDBDBD;
+}*/
+
+main {
+  background-color:#F6F6F6;
+}
+
+.article-title {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  padding-top: 150px;
+}
+
+.article-title::after {
+  content: "";
+  width: 45px;
+  height: 4px;
+  background: #DDDBDB;
+  display: block;
+  margin: 0 auto 40px;
+  margin-top: 20px;
+
+}
+.team p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #3C3C3C;
+  width: 570px;
+  margin: 0 auto;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-bottom: 150px;
+
+}
+
+.team-list-card {
+  position: relative;
+  width: 100%;
+}
+
+.team-foto {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#18B5DC;
+}
+
+.team-list-card:hover .team-foto {
+  opacity: 0.3;
+}
+
+.team-list-card:hover .overlay {
+  opacity: 1;
+}
+
+.team-foto .team-foto-active {
+  background-color: #18B5DC;
+  width: 270px;
+  height: 270px;
+}
+
+.list-card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.list-card__icon a {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  background-color: #18B5DC;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 2px;
+
+}
+
+.icon-twitter {
+  background-image: url(../images/icon-tw_white.png)
+  
+}
+
+.icon-fb {
+  background-image: url(../images/icon-fb_white.png);
+}
+
+.icon-instagram {
+  background-image: url(../images/icon-insta_white.png);
+}
+
+.list-card__icon a:hover {
+  background-color: #fff;
+}
+
+.icon-twitter:hover {
+  background-image: url(../images/icon-tw_blue.png);
+}
+
+.icon-fb:hover {
+  background-image: url(../images/icon-fb_blue.png);
+}
+
+.icon-instagram:hover {
+  background-image: url(../images/icon-insta_blue.svg);
+}
+
+.teams-list__name {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282528;
+  margin-top: 20px;
+}
+
+.team-list__profession {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #646464;
+
+}
+
+.header__main-menu .footer a{
+  font-size: 18px;
+}
+
+footer .header__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.footer .main-menu__items{
+  justify-content: center;
+  margin: 28px 0 28px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social__icon{
+  display: flex;
+  width: 42px;
+  height: 42px;
+  background-color:#18B5DC;
+  border: 1px solid #fff;
+  color: #fff;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.footer-social__icon{
+  margin: 0 5px 40px;
+  background-color: #fff;
+  border: 1px solid #18B5DC;
+  color: #18B5DC;
+}
+
+.footer-social__icon:hover {
+  background-color: #18B5DC;
+  color: #fff;
+}
