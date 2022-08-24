@@ -1,0 +1,134 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+* p, h1, ul {
+  margin: 0;
+  padding: 0;
+}
+* {
+  transition: all .1s ease-in;
+}
+.weather__wrapper {
+  width: 1440px;
+  height: 900px;
+  margin: 0 auto;
+  margin-top: 150px;
+  background: #3398cc;
+  border: 35px solid #2d7fb0;
+}
+.weather__title {
+  display: inline;
+  color: #FFFFFF;
+}
+.weather__title h1 {
+  padding: 66px 0 0 135px;
+  font-family: 'Montserrat';
+  font-size: 21px;
+  line-height: 25px;
+}
+.wi-sunrise::before {
+ font-size: 27px;
+ padding-left: 4px;
+}
+.conteiner {
+  width: 1170px;
+  height: 592px;
+  background-color: white;
+  margin: 37px 0 0 135px;
+  font-size: 0;
+}
+.weather__city {
+  display: inline-flex;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather__temperature {
+  display: block;
+  padding-top: 15px;
+}
+.weather__temperature i::before {
+  padding-left: 10px;
+  font-size: 42px;
+}
+.weather__item {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.weather__lisbon {
+  width: 50%;
+  height: 25%;
+  background: #3399CC;
+}
+.weather__paris {
+  width: 25%;
+  height: 25%;
+  background: #33CCCC;
+}
+.weather__belgrade {
+  width: 25%;
+  height: 25%;
+  background: #996699;
+}
+.weather__venice {
+  width: 25%;
+  height: 25%;
+  background: #C24747;
+}
+.weather__tel-avive {
+  width: 25%;
+  height: 25%;
+  background: #E2674A;
+}
+.weather__cair {
+  width: 25%;
+  height: 25%;
+  background: #FFCC66;
+}
+.weather__new-york {
+  width: 25%;
+  height: 25%;
+  background: #99CC99;
+}
+.weather__new-delhi {
+  width: 25%;
+  height: 25%;
+  background: #669999;
+}
+.weather__san-francisko {
+  width: 50%;
+  height: 25%;
+  background: #CC6699;
+}
+.weather__tokyo {
+  width: 25%;
+  height: 25%;
+  background: #339966;
+}
+.weather__sydney {
+  width: 100%;
+  height: 25%;
+  background: #666699;
+}
+.weather__city {
+  cursor: url('../cursor.svg') 24 35,pointer;	
+}
+.conteiner:hover .weather__city {
+  opacity: 0.7;
+}
+
+.conteiner:hover .weather__city:hover {
+  opacity: 1;
+}
+.weather__wishes {
+  padding: 35px 0 0 135px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
