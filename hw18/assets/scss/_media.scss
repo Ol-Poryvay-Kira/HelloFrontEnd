@@ -1,0 +1,85 @@
+@use "sass:math";
+@function rem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+@media (max-width: rem(1170px)) {
+  body {
+    padding: 0 30px;
+  }
+}
+@media (max-width: rem(835px)) {
+  .cities-works__gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px; 
+  }
+  .grid-col-span-2 {
+    grid-column: span 1;
+  }
+  .nature-works__gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six";
+  }
+  .people__gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+  }
+  .p-one {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .p-two {
+    grid-row: 2/4;
+    grid-column: 1/2;
+  }
+  .p-tree {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .p-four {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  .p-five {
+    grid-row: 6/8;
+    grid-column: 1/2;
+  }
+  .p-six {
+    grid-row: 8/10 ;
+    grid-column:1/2 ;
+  }
+  .p-seven {
+    grid-row: 10/11;
+    grid-column: 1/2 ;
+  }
+  .p-eight {
+    grid-row: 11/12;
+    grid-column: 1/2;
+  }
+  .p-nine {
+    grid-row: 12/13;
+    grid-column:1/2 ;
+  }
+  .p-ten {
+    grid-row: 13/14;
+    grid-column: 1/2;
+  }
+}
+@media (max-width: rem(375px)){
+  .title {
+    font-size: 1.5rem;
+    margin: rem(60px)0px rem(30px) 0px;
+  }
+  h3[class$="name"]{
+    font-size: rem(14px);
+  }
+  p[class$="date"]{
+    font-size: rem(14px);
+  }
+}
