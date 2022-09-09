@@ -1,0 +1,137 @@
+@media (max-width: 1195px) {
+  .header-conteiner {
+    padding: 0px 15px;
+  }
+  .main > div:nth-child(n + 2) {
+    padding: 0px 15px;
+  }
+  .first-screen__titel {
+    padding: 0px 15px;
+  }
+  .footer-conteiner {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 826px) {
+  .nav-menu {
+    display: none;
+  }
+  .header-burger {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .posts {
+    flex-direction: column;
+  }
+  .post {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .post:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .post > * {
+    flex-basis: 100%;
+  }
+  .info__conteiner {
+    flex-wrap: wrap;
+  }
+  .info__right-text {
+    max-width: 100%;
+    text-align: right;
+  }
+}
+@media (max-width: 425px) {
+  .search {
+    margin: 0 15px;
+  }
+  .first-screen__titel {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .blog__box {
+    flex-wrap: wrap;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .post {
+    flex-wrap: wrap;
+  }
+  .most-popular__articals {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .info__right-text {
+    text-align: left;
+  }
+  .footer-conteiner {
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+  }
+  .footer-content__title {
+    font-size: 32px;
+    line-height: 42px;
+    margin: 20px 0px;
+  }
+  .footer-content__phone,
+  .footer-content__email {
+    font-size: 18px;
+    line-height: 166%;
+    margin-bottom: 15px;
+  }
+  .copyright {
+    font-size: 16px;
+    line-height: 166%;
+  }
+}
+
+@media (max-width: 320px) {
+  .blog__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .posts {
+    display: flex;
+  }
+  .blog__box-top {
+    flex-direction: column-reverse;
+  }
+  .blog__box-bottom {
+    flex-direction: column;
+  }
+  .most-popular__articals {
+    display: flex;
+    flex-direction: column;
+  }
+  .info__conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content__cta {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .social__box {
+    margin: 0px;
+  }
+  .posts {
+    display: flex;
+    flex-direction: column;
+  }
+}
