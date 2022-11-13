@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Quattrocento";
+  src: url(../../fonts/Quattrocento-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Quattrocento";
+  src: url(../../fonts/Quattrocento-Bold.ttf);
+  font-weight: 700;
+}
+@-webkit-keyframes random {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes random {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.conteiner {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.heart-suit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.club-suit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.diamond-suit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.spade-suit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.flip-card-conteiner {
+  width: 240px;
+  height: 336px;
+  perspective: 1000px;
+}
+
+.flip-card-conteiner:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.card-back__img {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  transform: rotateY(180deg);
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: flex;
+  width: 240px;
+  height: 336px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+  z-index: -1;
+}
+.card__left {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  justify-content: space-between;
+}
+.card__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.card__right {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.card-left-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-left-top__number {
+  font-family: "Quattrocento";
+  font-size: 2rem;
+  margin: 0px;
+}
+.card-left-top__suit {
+  width: 40px;
+}
+
+.card-center {
+  width: 100px;
+}
+
+.heart {
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  fill: #ed2224;
+}
+
+.club {
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  fill: black;
+}
+
+.card-right-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card-right-bottom__align {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: auto;
+}
+.card-right-bottom__number {
+  font-family: "Quattrocento";
+  font-size: 2rem;
+  margin: 0px;
+  transform: rotate(180deg);
+  text-align: center;
+}
+.card-right-bottom__suit {
+  width: 40px;
+  transform: rotate(180deg);
+}
+
+.a-1 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
+
+.a-2 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
+
+.a-3 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
+
+.a-4 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
+
+.a-5 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
+
+.a-6 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
+
+.a-7 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
+
+.a-8 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
+
+.a-9 {
+  -webkit-animation-name: random;
+          animation-name: random;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 36;
+          animation-iteration-count: 36;
+}
