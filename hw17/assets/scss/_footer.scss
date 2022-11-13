@@ -1,0 +1,90 @@
+@use "sass:math";
+@function rem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem; 
+}
+%conteiner {
+  max-width: rem(1170px);
+  width: 100%;
+  margin: 0 auto;
+}
+.footer {
+  margin-top: auto;
+  background: #f4f4f4;
+}
+.footer-conteiner {
+  @extend %conteiner;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: rem(70px);
+}
+.footer-conteiner > * {
+  flex-basis: 100%;
+}
+.footer-content {
+  align-items: center;
+  &__title {
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(48px);
+    line-height: rem(64px);
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  &__phone {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  &__email {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+  }
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: rem(23px);
+  &__box {
+    display: flex;
+    width: rem(50px);
+    height: rem(50px);
+    border: 1px solid #565656;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #565656;
+    font-size: rem(24px);
+    cursor: url("../../icons/cursor.svg") 1 1, auto;
+  }
+  &__box:hover {
+    background-color: #565656;
+    color: #f4f4f4;
+  }
+}
+.copyright {
+  max-width: rem(1170px);
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(12px);
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  padding-bottom: rem(30px);
+}

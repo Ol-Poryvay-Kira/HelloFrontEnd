@@ -1,0 +1,91 @@
+@use "sass:math";
+@function rem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+%conteiner {
+  max-width: rem(1170px);
+  width: 100%;
+  margin: 0 auto;
+}
+.main {
+}
+@media(max-width:1170px) {
+  main {
+    padding: 0 rem(20px);
+  }
+  .header-logo {
+    padding: 0 rem(20px);
+  }
+  .footer-content {
+    padding: 0 rem(20px);
+    margin-bottom: rem(40px);
+  }
+  .footer-conteiner  {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .social {
+    margin-bottom: rem(40px);
+  }
+}
+.main-conteiner {
+  @extend %conteiner;
+}
+.title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(48px);
+  line-height: rem(64px);
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: rem(70px);
+}
+.first-screen {
+  margin-bottom: rem(90px);
+}
+.description {
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: rem(90px);
+}
+.description-text {
+  max-width: rem(570px);
+}
+.first-section {
+  margin-bottom: rem(90px);
+}
+.second-section {
+  margin-bottom: rem(90px);
+}
+.third-section {
+  margin-bottom: rem(90px);
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(28px);
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: rem(50px);
+  }
+  &__text {
+    padding-right: 10px;
+    flex-direction: column;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(19px);
+    line-height: rem(32px);
+    letter-spacing: 0.05em;
+    color: #565656;
+  }
+}
+img {
+  width: 100%;
+}

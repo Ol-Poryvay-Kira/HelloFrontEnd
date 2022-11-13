@@ -1,0 +1,38 @@
+@use "sass:math";
+@function rem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url(../../fonts/RedHatDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../../fonts/Lato-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../../fonts/Lato-Bold.ttf);
+  font-weight: 700;
+}
+%conteiner {
+  max-width: rem(1170px);
+  min-height: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header-conteiner {
+  @extend %conteiner;
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16px);
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: #000000;
+}
