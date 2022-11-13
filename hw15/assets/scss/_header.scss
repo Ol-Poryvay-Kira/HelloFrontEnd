@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url(../../fonts/RedHatDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../../fonts/Lato-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../../fonts/Lato-Bold.ttf);
+  font-weight: 700;
+}
+%conteiner {
+  max-width: 1170px;
+  min-height: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header-conteiner {
+  @extend %conteiner;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.logo {
+  flex-grow: 1;
+}
+.icon-logo {
+  text-decoration: none;
+  color: #000000;
+  cursor: url("../../icons/cursor.svg") 1 1, auto;
+}
+.nav-menu {
+  display: flex;
+  gap: 10px 42px;
+  flex-wrap: wrap;
+  &__link {
+    cursor: url("../../icons/cursor.svg") 1 1, auto;
+    position: relative;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
+  .lin1 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      border: 1px solid #000000;
+      top: 140%;
+      right: 19%;
+      visibility: hidden;
+    }
+    &:active::after {
+      visibility: visible;
+    }
+  }
+  .lin2 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      border: 1px solid #000000;
+      top: 140%;
+      right: 21%;
+      visibility: hidden;
+    }
+    &:active::after {
+      visibility: visible;
+    }
+  }
+  .lin3 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      border: 1px solid #000000;
+      top: 140%;
+      right: 21%;
+      visibility: hidden;
+    }
+    &:active::after {
+      visibility: visible;
+    }
+  }
+  .lin4 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      border: 1px solid #000000;
+      top: 140%;
+      right: 13%;
+      visibility: hidden;
+    }
+    &:active::after {
+      visibility: visible;
+    }
+  }
+  .lin5 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      border: 1px solid #000000;
+      top: 140%;
+      right: 29%;
+      visibility: hidden;
+    }
+    &:active::after {
+      visibility: visible;
+    }
+  }
+}
+.search {
+  display: flex;
+  flex-shrink: 0;
+  margin: 0 30px;
+}
+.icon-search-icon {
+  text-decoration: none;
+  color: #000000;
+  cursor: url("../../icons/cursor.svg") 1 1, auto;
+}
+.header-burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+}
+.header-burder-item {
+  margin: auto;
+  width: 34px;
+  height: 2px;
+  background-color: #000000;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    background-color: #000000;
+    transform: translateY(-10px);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    background-color: #000000;
+    transform: translateY(10px);
+  }
+}
