@@ -1,0 +1,136 @@
+.music-list {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.music-list__item {
+  font-size: 20px;
+}
+.music-list__author {
+  color: rgb(86, 37, 175);
+}
+.music-list__song {
+  color: rgb(87, 141, 158);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(77, 61, 61);
+  cursor: pointer;
+  margin: 10px 0 0 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(216, 231, 245);
+  font-weight: 700;
+  font-size: 21px;
+}
+.button-active {
+  display: none;
+}
+.button:hover {
+  background-color: rgb(77, 61, 61);
+}
+.button-close {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(77, 61, 61);
+  cursor: pointer;
+  margin: 10px 0 0 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(216, 231, 245);
+  font-weight: 700;
+  font-size: 21px;
+}
+.button-close:hover {
+  background-color: rgb(77, 61, 61);
+}
+.button-close-active {
+  display: flex;
+}
+.textarea {
+  display: none;
+  max-width: 500px;
+  width: 100%;
+  height: 100px;
+  margin: 10px 0 0 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 21px;
+  padding: 10px;
+}
+.textarea-active {
+  display: block;
+}
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+  box-sizing: border-box;
+
+}
+.control-traffic-light {
+  max-width: 200px;
+  width: 100%;
+  height: 200px;
+  border: 5px solid rgb(101, 129, 35);
+  background-color: rgb(216, 35, 35);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control-text {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(216, 231, 245);
+  font-weight: 700;
+  font-size: 22px;
+}
+.traffic-light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:rgb(117, 114, 114);
+  width:240px;
+  height:640px;
+  border-radius:30px;
+  gap: 40px
+}
+.top-traffic-light {
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 50%;
+}
+.mid-traffic-light {
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 50%;
+}
+.bottom-traffic-light {
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 50%;
+}
+.traffic-light-red {
+  background-color: rgb(188, 0, 0);
+}
+.traffic-light-orange {
+  background-color: rgb(224, 179, 0);
+}
+.traffic-light-green {
+  background-color: rgb(0, 219, 7);
+}
