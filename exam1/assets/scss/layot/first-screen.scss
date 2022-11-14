@@ -1,0 +1,95 @@
+.first-screen {
+  &__bg-img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__conteiner {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  @media (max-width: 1170px) {
+    .first-screen__conteiner {
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 523px;
+    margin: 150px 0;
+  }
+  @media (max-width: 768px) {
+    .first-screen__content {
+      margin: 100px auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 425px) {
+    .first-screen__title {
+      font-size: 40px;
+    }
+  }
+  &__text {
+    max-width: 42ch;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    opacity: 0.8;
+    margin: 0;
+  }
+  &__button {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #53f3cd;
+    position: relative;
+    margin-top: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 112px;
+      height: 13px;
+      top: 11px;
+      left: 10px;
+      background: #53f3cd;
+      opacity: 0.3;
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: #02e0ab;
+    }
+    &:hover::after {
+      content: "";
+      background: #02e0ab;
+    }
+  }
+}
+.blue {
+  font-style: italic;
+  color: #689ff2;
+}

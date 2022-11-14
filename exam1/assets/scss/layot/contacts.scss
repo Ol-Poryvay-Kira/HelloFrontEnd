@@ -1,0 +1,154 @@
+.contact {
+  &__conteiner {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    gap: 230px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border: 1px solid #515773;
+      background-color: #515773;
+    }
+  }
+  @media (max-width: 1170px) {
+    .contact__conteiner {
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+  }
+  @media (max-width: 900px) {
+    .contact__conteiner {
+      gap: 115px;
+    }
+  }
+  @media (max-width: 768px) {
+    .contact__conteiner {
+      gap: 10px;
+      flex-direction: column;
+    }
+    .contact__left {
+      text-align: center;
+    }
+    .contact__right {
+      max-width: 100%;
+    }
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 81px;
+  }
+  &__title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 39px;
+    color: #ffffff;
+  }
+  &__subtitle {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  &__right {
+    max-width: 470px;
+    width: 100%;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin: 48px 0 104px 0;
+  }
+  &__name {
+    background: none;
+    border: none;
+    opacity: 0.1;
+    border-bottom: 1px solid #ffffff;
+    padding: 12px 5px;
+    outline: none;
+    &:valid {
+      opacity: 1;
+      border-color: #53f3cd;
+    }
+  }
+  &__email {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    padding: 12px 5px;
+    outline: none;
+    &:valid{
+      opacity: 1;
+      border-color: #53f3cd;
+    }
+  }
+  &__more {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    padding: 12px 5px;
+    outline: none;
+    &:valid {
+      opacity: 1;
+      border-color: #53f3cd;
+    }
+  }
+  &__button {
+    background: none;
+    border: none;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #53f3cd;
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: 12px;
+    text-align: left;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 163px;
+      height: 13px;
+      top: 11px;
+      left: 15px;
+      background: #53f3cd;
+      opacity: 0.3;
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: #02e0ab;
+    }
+    &:hover::after {
+      content: "";
+      background: #02e0ab;
+    }
+  }
+}
+.text-style {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  opacity: 0.5;
+}
