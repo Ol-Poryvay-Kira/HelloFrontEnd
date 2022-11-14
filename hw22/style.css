@@ -1,0 +1,66 @@
+/* 1 */
+#before_edit, .after_edit 
+{
+  text-align: center;
+  padding: 30px 0;
+  font-size: 20px;
+  color: #1443dd;
+  font-weight: 700;
+}
+#editing 
+{
+  display: block;
+  margin: auto;
+  font-size: 15px;
+  color: #1443dd;
+}
+/* 2 */
+table 
+{
+  text-align:left;
+  margin: auto;
+  padding-top: 100px;
+  border-collapse: collapse; /* Убираем двойные линии между ячейками */
+  border: 2px solid white;
+  }
+th,td 
+{
+  padding: 6px 10px;
+  font-size: 20px;
+  border: 1px solid maroon;
+  text-align: left;
+}
+th 
+{
+  cursor:pointer;
+  font-size: 25px;
+}
+/* 3 */
+p 
+{ 
+  background: #8181d6;
+  border: 3px solid #141933;
+  height: 150px;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px; 
+  margin-bottom: 50px;
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+p.resizable 
+{ 
+  background: #3bf0c9; 
+  position: relative; 
+}
+p .resizer 
+{ 
+  width: 10px; 
+  height: 10px; 
+  background: rgb(231, 18, 18); 
+  position: absolute;
+  right: 0; 
+  bottom: 0; 
+  cursor: se-resize; 
+}
